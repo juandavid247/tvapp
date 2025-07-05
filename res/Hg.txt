@@ -1,0 +1,1989 @@
+#
+# generated on 2025/03/06 05:57:39
+#
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.SdkConfigEntity
+tableName=sdk_config
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=clientId
+columnName=client_id
+# --field-end--
+# --field-start--
+fieldName=clientSecret
+columnName=client_secret
+# --field-end--
+# --field-start--
+fieldName=validated
+columnName=validated
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.WifiProviderEntity
+tableName=ssid_info
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=wifiSsid
+columnName=wifi_ssid
+# --field-end--
+# --field-start--
+fieldName=wifiBssid
+columnName=wifi_bssid
+# --field-end--
+# --field-start--
+fieldName=ispName
+columnName=isp_name
+# --field-end--
+# --field-start--
+fieldName=idIpRange
+columnName=id_ip_range
+# --field-end--
+# --field-start--
+fieldName=expiresAt
+columnName=expires_at
+# --field-end--
+# --field-start--
+fieldName=rangeStart
+columnName=range_start
+# --field-end--
+# --field-start--
+fieldName=rangeEnd
+columnName=range_end
+# --field-end--
+# --field-start--
+fieldName=privateIp
+columnName=private_ip
+# --field-end--
+# --field-start--
+fieldName=hasIpv6Support
+columnName=hasIpv6Support
+# --field-end--
+# --field-start--
+fieldName=asn
+columnName=asn
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.SdkPreferenceEntity
+tableName=preference
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=key
+columnName=key
+# --field-end--
+# --field-start--
+fieldName=value
+columnName=value
+# --field-end--
+# --field-start--
+fieldName=createdAt
+columnName=created_at
+# --field-end--
+# --field-start--
+fieldName=updatedAt
+columnName=updated_at
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.CellIdentityEntity
+tableName=cell_identity
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=cellType
+columnName=type
+# --field-end--
+# --field-start--
+fieldName=cellIdentity
+columnName=identity
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.KpiUsageEntity
+tableName=kpi_usage
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=kpi
+columnName=kpi
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=eventCount
+columnName=event_count
+# --field-end--
+# --field-start--
+fieldName=bytesGen
+columnName=bytes_gen
+# --field-end--
+# --field-start--
+fieldName=bytesSync
+columnName=bytes_sync
+# --field-end--
+# --field-start--
+fieldName=bytesAnalyticsGen
+columnName=bytes_analytics_gen
+# --field-end--
+# --field-start--
+fieldName=bytesAnalyticsSync
+columnName=bytes_analytics_sync
+# --field-end--
+# --field-start--
+fieldName=countAnalyticsEvents
+columnName=count_analytics_event
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.CellDataEntity
+tableName=cell_data
+# --table-fields-start--
+# --field-start--
+fieldName=key
+columnName=key
+# --field-end--
+# --field-start--
+fieldName=bytesIn
+columnName=bytes_in
+# --field-end--
+# --field-start--
+fieldName=bytesOut
+columnName=bytes_out
+# --field-end--
+# --field-start--
+fieldName=reconnectionCounter
+columnName=reconnection
+# --field-end--
+# --field-start--
+fieldName=durationInMillis
+columnName=duration
+# --field-end--
+# --field-start--
+fieldName=appHostForegroundDurationMillis
+columnName=app_foreground_duration
+# --field-end--
+# --field-start--
+fieldName=appHostLaunches
+columnName=app_launches
+# --field-end--
+# --field-start--
+fieldName=idleStateLight
+columnName=idle_state_light
+# --field-end--
+# --field-start--
+fieldName=idleStateDeep
+columnName=idle_state_deep
+# --field-end--
+# --field-start--
+fieldName=cellDbmRangeStart
+columnName=cell_dbm_range_start
+# --field-end--
+# --field-start--
+fieldName=cellDbmRangeEnd
+columnName=cell_dbm_range_end
+# --field-end--
+# --field-start--
+fieldName=wifiRssiRangeStart
+columnName=wifi_rssi_range_start
+# --field-end--
+# --field-start--
+fieldName=wifiRssiRangeEnd
+columnName=wifi_rssi_range_end
+# --field-end--
+# --field-start--
+fieldName=granularity
+columnName=granularity
+# --field-end--
+# --field-start--
+fieldName=aggregationTimestamp
+columnName=aggregation_timestamp
+# --field-end--
+# --field-start--
+fieldName=creationTimestamp
+columnName=creation_timestamp
+# --field-end--
+# --field-start--
+fieldName=isLatestCoverageOnCell
+columnName=latest_coverage_on_cell
+# --field-end--
+# --field-start--
+fieldName=limitedCoveragePrimaryCell
+columnName=limited_coverage_primary_cell
+# --field-end--
+# --field-start--
+fieldName=limitedCoverageSecondaryCells
+columnName=limited_coverage_secondary_cells
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.GlobalThroughputEntity
+tableName=global_throughput
+# --table-fields-start--
+# --field-start--
+fieldName=network
+columnName=network
+# --field-end--
+# --field-start--
+fieldName=duration
+columnName=duration
+# --field-end--
+# --field-start--
+fieldName=bytes
+columnName=bytes
+# --field-end--
+# --field-start--
+fieldName=typeValue
+columnName=type
+# --field-end--
+# --field-start--
+fieldName=settings
+columnName=settings
+# --field-end--
+# --field-start--
+fieldName=sessionStats
+columnName=sesion_stats
+# --field-end--
+# --field-start--
+fieldName=foregroundAppPackage
+columnName=foreground_package_name
+# --field-end--
+# --field-start--
+fieldName=coverage
+columnName=coverage
+# --field-end--
+# --field-start--
+fieldName=bytesHistogram
+columnName=bytes_histogram
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.IndoorEntity
+tableName=pos
+# --table-fields-start--
+# --field-start--
+fieldName=network
+columnName=network
+# --field-end--
+# --field-start--
+fieldName=battery
+columnName=battery
+# --field-end--
+# --field-start--
+fieldName=ringerMode
+columnName=ringer_mode
+# --field-end--
+# --field-start--
+fieldName=scanWifiList
+columnName=scan_wifi
+# --field-end--
+# --field-start--
+fieldName=sensorStatusList
+columnName=sensor_status_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCellsLegacy
+columnName=neighbouring_cells
+# --field-end--
+# --field-start--
+fieldName=coverage
+columnName=coverage
+# --field-end--
+# --field-start--
+fieldName=screenUsageInfo
+columnName=screen_usage
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.LocationCellEntity
+tableName=location_cell
+# --table-fields-start--
+# --field-start--
+fieldName=cellId
+columnName=cell_id
+# --field-end--
+# --field-start--
+fieldName=geohash
+columnName=geohash
+# --field-end--
+# --field-start--
+fieldName=isRealTimeCell
+columnName=is_real_time_cell
+# --field-end--
+# --field-start--
+fieldName=latestCarrierCell
+columnName=latest_carrier_cell
+# --field-end--
+# --field-start--
+fieldName=neighbouringCellsLegacy
+columnName=secondary_cells
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.LocationGroupEntity
+tableName=wifi_group
+# --table-fields-start--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=date
+columnName=date
+# --field-end--
+# --field-start--
+fieldName=duration
+columnName=duration
+# --field-end--
+# --field-start--
+fieldName=scanWifiListRaw
+columnName=scan_wifi_data
+# --field-end--
+# --field-start--
+fieldName=locationRaw
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=count
+columnName=event_count
+# --field-end--
+# --field-start--
+fieldName=limitDistance
+columnName=limit
+# --field-end--
+# --field-start--
+fieldName=minDistanceRaw
+columnName=min_distance
+# --field-end--
+# --field-start--
+fieldName=maxDistanceRaw
+columnName=max_distance
+# --field-end--
+# --field-start--
+fieldName=timestampStart
+columnName=timestamp_start
+# --field-end--
+# --field-start--
+fieldName=timestampSample
+columnName=timestamp_sample
+# --field-end--
+# --field-start--
+fieldName=timestampEnd
+columnName=timestamp_end
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=mobilityRaw
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=dataSimConnectionStatus
+columnName=data_sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.PhoneCallEntity
+tableName=phone_call
+# --table-fields-start--
+# --field-start--
+fieldName=timestampStart
+columnName=timestamp_call_start
+# --field-end--
+# --field-start--
+fieldName=phoneCallType
+columnName=phone_call_type
+# --field-end--
+# --field-start--
+fieldName=duration2G
+columnName=duration_2g
+# --field-end--
+# --field-start--
+fieldName=duration3G
+columnName=duration_3g
+# --field-end--
+# --field-start--
+fieldName=duration4G
+columnName=duration_4g
+# --field-end--
+# --field-start--
+fieldName=duration5G
+columnName=duration_5g
+# --field-end--
+# --field-start--
+fieldName=durationWifi
+columnName=duration_wifi
+# --field-end--
+# --field-start--
+fieldName=durationUnkown
+columnName=duration_unknown
+# --field-end--
+# --field-start--
+fieldName=hasCsfb
+columnName=has_csfb
+# --field-end--
+# --field-start--
+fieldName=handoverCount
+columnName=handover_count
+# --field-end--
+# --field-start--
+fieldName=averageDbm
+columnName=average_dbm
+# --field-end--
+# --field-start--
+fieldName=averageDbmCdma
+columnName=average_dbm_cdma
+# --field-end--
+# --field-start--
+fieldName=averageDbmGsm
+columnName=average_dbm_gsm
+# --field-end--
+# --field-start--
+fieldName=averageDbmWcdma
+columnName=average_dbm_wcdma
+# --field-end--
+# --field-start--
+fieldName=averageDbmLte
+columnName=average_dbm_lte
+# --field-end--
+# --field-start--
+fieldName=averageDbmNr
+columnName=average_dbm_nr
+# --field-end--
+# --field-start--
+fieldName=isDualSim
+columnName=is_dual_sim
+# --field-end--
+# --field-start--
+fieldName=csfbTime
+columnName=csfb_time
+# --field-end--
+# --field-start--
+fieldName=offhookTime
+columnName=offhook_time
+# --field-end--
+# --field-start--
+fieldName=vowifi
+columnName=voWifi
+# --field-end--
+# --field-start--
+fieldName=volte
+columnName=volte
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cells
+# --field-end--
+# --field-start--
+fieldName=dimensionsStart
+columnName=dimensions_start
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.PingEntity
+tableName=ping
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=origin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=destination
+columnName=destination
+# --field-end--
+# --field-start--
+fieldName=pingParams
+columnName=ping_params
+# --field-end--
+# --field-start--
+fieldName=ipVersion
+columnName=ip_version
+# --field-end--
+# --field-start--
+fieldName=pingInfo
+columnName=ping_info
+# --field-end--
+# --field-start--
+fieldName=network
+columnName=network
+# --field-end--
+# --field-start--
+fieldName=coverage
+columnName=coverage
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.ScanWifiSnapshotEntity
+tableName=scan_wifi
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscriptionId
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=date
+columnName=date
+# --field-end--
+# --field-start--
+fieldName=wifiDataRaw
+columnName=wifi_data
+# --field-end--
+# --field-start--
+fieldName=scanWifiListRaw
+columnName=scan_wifi_data
+# --field-end--
+# --field-start--
+fieldName=locationRaw
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=totalWifiCount
+columnName=total_wifi
+# --field-end--
+# --field-start--
+fieldName=dataSimConnectionStatus
+columnName=data_sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.SpeedTestEntity
+tableName=speedtest
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=origin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=server
+columnName=server
+# --field-end--
+# --field-start--
+fieldName=config
+columnName=config
+# --field-end--
+# --field-start--
+fieldName=ping
+columnName=ping
+# --field-end--
+# --field-start--
+fieldName=pingIcmp
+columnName=ping_icmp
+# --field-end--
+# --field-start--
+fieldName=download
+columnName=download
+# --field-end--
+# --field-start--
+fieldName=upload
+columnName=upload
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.TraceRouteEntity
+tableName=traceroute
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=origin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=destination
+columnName=destination
+# --field-end--
+# --field-start--
+fieldName=params
+columnName=params
+# --field-end--
+# --field-start--
+fieldName=result
+columnName=result
+# --field-end--
+# --field-start--
+fieldName=error
+columnName=error
+# --field-end--
+# --field-start--
+fieldName=analysis
+columnName=analysis
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.VideoEntity
+tableName=video
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=kpiOrigin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=video
+columnName=video
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.WebEntity
+tableName=web
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=kpiOrigin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=web
+columnName=web
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.sdk.model.YoutubeEntity
+tableName=youtube
+# --table-fields-start--
+# --field-start--
+fieldName=hostTestId
+columnName=hostTestId
+# --field-end--
+# --field-start--
+fieldName=origin
+columnName=origin
+# --field-end--
+# --field-start--
+fieldName=opinionScore
+columnName=opinion_score
+# --field-end--
+# --field-start--
+fieldName=videoId
+columnName=videoId
+# --field-end--
+# --field-start--
+fieldName=params
+columnName=params
+# --field-end--
+# --field-start--
+fieldName=result
+columnName=result
+# --field-end--
+# --field-start--
+fieldName=playerError
+columnName=player_error
+# --field-end--
+# --field-start--
+fieldName=location
+columnName=location
+# --field-end--
+# --field-start--
+fieldName=cell
+columnName=cell
+# --field-end--
+# --field-start--
+fieldName=cellFallback
+columnName=cell_fallback
+# --field-end--
+# --field-start--
+fieldName=secondaryCells
+columnName=secondary_cell_list
+# --field-end--
+# --field-start--
+fieldName=neighbouringCells
+columnName=neighbouring_cell_list
+# --field-end--
+# --field-start--
+fieldName=connection
+columnName=connection
+# --field-end--
+# --field-start--
+fieldName=wifi
+columnName=wifi
+# --field-end--
+# --field-start--
+fieldName=isWifiAvailable
+columnName=wifiEnabled
+# --field-end--
+# --field-start--
+fieldName=serviceState
+columnName=service_state
+# --field-end--
+# --field-start--
+fieldName=dataConnectivity
+columnName=data_connectivity
+# --field-end--
+# --field-start--
+fieldName=device
+columnName=device
+# --field-end--
+# --field-start--
+fieldName=screenState
+columnName=screen
+# --field-end--
+# --field-start--
+fieldName=mobilityStatus
+columnName=mobility
+# --field-end--
+# --field-start--
+fieldName=callStatus
+columnName=call_status
+# --field-end--
+# --field-start--
+fieldName=callType
+columnName=call_type
+# --field-end--
+# --field-start--
+fieldName=processStatusInfo
+columnName=process_info
+# --field-end--
+# --field-start--
+fieldName=trigger
+columnName=trigger
+# --field-end--
+# --field-start--
+fieldName=dataSubscription
+columnName=data_subscription
+# --field-end--
+# --field-start--
+fieldName=dataActivity
+columnName=data_activity
+# --field-end--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+columnName=timestamp
+# --field-end--
+# --field-start--
+fieldName=timezone
+columnName=timezone
+# --field-end--
+# --field-start--
+fieldName=sdkVersion
+columnName=sdk_version
+# --field-end--
+# --field-start--
+fieldName=sdkVersionName
+columnName=sdk_version_name
+# --field-end--
+# --field-start--
+fieldName=simConnectionStatus
+columnName=sim_connection_status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

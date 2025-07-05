@@ -1,0 +1,110 @@
+<!--
+  ~ Copyright (c) 2024.  Cumberland Solutions S.L. - All Rights Reserved
+  ~ Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ Proprietary and confidential
+  -->
+
+<!DOCTYPE html>
+<html>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            position: fixed;
+        }
+    </style>
+
+    <head>
+        <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="https://www.youtube.com/iframe_api"></script>
+    </head>
+
+    <body>
+        <div id="weplanPlayerContainer"></div>
+    </body>
+
+    <script type="text/javascript">
+        var player;
+
+    	function onYouTubeIframeAPIReady() {
+    		player = new YT.Player('weplanPlayerContainer', {
+
+                height: '100%',
+    			width: '100%',
+
+                events: {
+    				onReady: function(event) { WeplanAnalytics.onReady() },
+    				onStateChange: function(event) { WeplanAnalytics.onStateChange(event.data) },
+    				onPlaybackQualityChange: function(event) { WeplanAnalytics.onPlaybackQualityChange(event.data) },
+    				onError: function(error) { WeplanAnalytics.onError(error.data) },
+    				onApiChange: function(event) { WeplanAnalytics.onApiChange() }
+    			},
+
+    			playerVars: {
+    				autoplay: 0,
+    				autohide: 1,
+    				controls: 0,
+    				enablejsapi: 1,
+    				fs: 0,
+    				origin: 'https://www.youtube.com',
+    				rel: 0,
+    				showinfo: 0,
+    				iv_load_policy: 3
+    			}
+    		});
+    	}
+
+
+        function seekTo(startSeconds) {
+        	player.seekTo(startSeconds, true);
+        }
+
+        function pauseVideo() {
+        	player.pauseVideo();
+        }
+
+        function playVideo() {
+        	player.playVideo();
+        }
+
+        function loadVideoById(videoId) {
+            player.loadVideoById(videoId);
+        }
+
+        function loadVideo(videoId, startSeconds, endSeconds, suggestedQuality) {
+            player.loadVideoById({'videoId': videoId,
+               'startSeconds': startSeconds,
+               'endSeconds': endSeconds
+               }
+            );
+        }
+
+        function setVolume(volumePercent) {
+            player.setVolume(volumePercent);
+        }
+
+        function mute() {
+            player.mute(0);
+        }
+
+        function unMute() {
+            player.unMute(0);
+        }
+
+        function setSize(width, height) {
+            player.setSize(width, height);
+        }
+
+        function notifyProgress() {
+            var seconds = player.getCurrentTime();
+            var progress = player.getVideoLoadedFraction();
+
+            WeplanAnalytics.onProgressChanged(seconds, progress);
+        }
+
+    </script>
+</html>

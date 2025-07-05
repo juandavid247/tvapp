@@ -1,0 +1,106 @@
+#
+# generated on 2024/04/03 04:45:48
+#
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.user.model.AccountInfoEntity
+tableName=account_info
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=weplanAccountId
+columnName=user_account
+# --field-end--
+# --field-start--
+fieldName=creationTimestamp
+columnName=creation_timestamp
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.user.model.SdkSimEntity
+tableName=sdk_sim
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=userId
+columnName=user_account
+# --field-end--
+# --field-start--
+fieldName=subId
+columnName=sub_id
+# --field-end--
+# --field-start--
+fieldName=creationTimestamp
+columnName=creation_timestamp
+# --field-end--
+# --field-start--
+fieldName=subscriptionId
+columnName=subscription_id
+# --field-end--
+# --field-start--
+fieldName=countryIso
+columnName=country_iso
+# --field-end--
+# --field-start--
+fieldName=mcc
+columnName=mcc
+# --field-end--
+# --field-start--
+fieldName=mnc
+columnName=mnc
+# --field-end--
+# --field-start--
+fieldName=carrierName
+columnName=carrier_name
+# --field-end--
+# --field-start--
+fieldName=displayName
+columnName=display_name
+# --field-end--
+# --field-start--
+fieldName=networkCoverage
+columnName=network_coverage
+# --field-end--
+# --field-start--
+fieldName=cellCoverage
+columnName=cell_coverage
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cumberland.sdk.core.repository.sqlite.user.model.TemporalIdEntity
+tableName=temporal_id
+# --table-fields-start--
+# --field-start--
+fieldName=id
+columnName=_id
+generatedId=true
+allowGeneratedIdInsert=true
+# --field-end--
+# --field-start--
+fieldName=idRlp
+columnName=rlp_id
+# --field-end--
+# --field-start--
+fieldName=creationTimestamp
+columnName=creation_timestamp
+# --field-end--
+# --field-start--
+fieldName=ulid
+columnName=ulid
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
